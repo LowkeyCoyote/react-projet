@@ -1,0 +1,27 @@
+
+.content-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 8em;
+}
+
+.content-text h1 {
+    font-size: 3em;
+    line-height: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+@media screen and (max-width: 1024px) {
+    .content-text {
+        padding-bottom: 0;
+        margin-bottom: 3.5em;
+        text-align: center;
+    }
+
+    .content-text h1 {
+        font-size: 1.8em;
+        font-weight: 500;
+        margin-bottom: 1em;
+    }
+}

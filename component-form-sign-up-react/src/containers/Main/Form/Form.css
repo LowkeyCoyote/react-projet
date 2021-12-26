@@ -1,0 +1,130 @@
+.container-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blue-button {
+    width: 100%;
+    background-color: var(--blue);
+    padding: 1.2em 0 0.8em 0;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 0.5em;
+    margin-bottom: 0.7em;
+    box-shadow: 0 8px 0 hsl(249, 10%, 26%, 0.25);
+}
+
+
+
+.bold {
+    font-weight: 600;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin: 1em;
+    padding: 1em 0 3em 0;
+    width: 100%;
+    border-radius: 0.5em;
+    box-shadow: 0 8px 0 hsl(249, 10%, 26%, 0.25);
+}
+
+form label {
+    width: 90%;
+    text-align: center;
+    margin-bottom: 0.4em;
+}
+
+form input {
+    width: 95%;
+    padding: 1.3em 1.5em 1.3em 2em;
+    border-radius: 0.5em;
+    border: 1px solid lightgray;
+    margin-top: 1.5em;
+    font-weight: 700;
+    color: var(--dark-blue);
+    caret-color: var(--dark-blue);
+    caret-shape: bar;
+}
+
+form input:focus {
+    border: 2px solid var(--dark-blue);
+}
+
+.green-button {
+    width: 85%;
+    background-color: var(--green);
+    padding: 1em 0 0.7em 0;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 0.5em;
+    margin: 1em 0;
+    box-shadow: 0 4px 0 hsla(154, 77%, 24%, 0.6);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.green-button:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.error-text {
+    font-size: 0.7em;
+    color: var(--red);
+    align-self: end;
+    padding-right: 6em;
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 0.2em;
+}
+
+.error-img {
+    background-image: url("../../../../images/icon-error.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-origin: content-box;
+}
+
+.terms {
+    font-size: 0.7em;
+    color: var(--grayish-blue);
+}
+
+.accent {
+    color: var(--red);
+    font-weight: 700;
+}
+
+@media screen and (max-width: 1024px){
+    form input{
+        margin-top: 0.7em;
+        padding-left: 1.2em;
+    }
+
+    form input:focus {
+        border: 2px solid var(--dark-blue);
+    }
+    .blue-button {
+        padding: 1.2em 3em 0.8em 3em;
+        line-height: 1.7em;
+    }
+    .green-button{
+        margin: 0.5em 0;
+        letter-spacing: 0;
+    }
+
+    .terms {
+        width: 80%;
+        text-align: center;
+        margin-top: 0.3em;
+        line-height: 1.7em;
+    }
+
+}
